@@ -41,6 +41,7 @@ ARCH=arm64 ./mk-base-gnome-ubuntu.sh
 VERSION=debug ./mk-gnome-rootfs.sh
 ```
 - 最后形成rootfs-gnome.img创建超链rootfs.img接到rockdev文件夹下；
-- 然后执行./build.sh updateimg打包
+- 执行./mkfirmware.sh
+- 然后执行./build.sh updateimg打包（需要更改脚本给mkupdate.sh传入参数）
 - 最终rockdev出update.img镜像包
 
